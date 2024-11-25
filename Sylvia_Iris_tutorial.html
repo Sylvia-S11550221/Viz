@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)http://localhost:5770/ -->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" coupert-item="9AF8D9A4E502F3784AD24272D81F0381"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-
+<meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -10,7 +9,7 @@
 <meta name="author" content="Sylvia">
 
 <title>Iris Tutorial</title>
-<style class="anchorjs"></style><style>
+<style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -59,23 +58,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="./Iris Tutorial_files/clipboard.min.js"></script>
-<script src="./Iris Tutorial_files/quarto.js"></script>
-<script src="./Iris Tutorial_files/popper.min.js"></script>
-<script src="./Iris Tutorial_files/tippy.umd.min.js"></script>
-<script src="./Iris Tutorial_files/anchor.min.js"></script>
-<link href="./Iris Tutorial_files/tippy.css" rel="stylesheet">
-<link href="./Iris Tutorial_files/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="./Iris Tutorial_files/bootstrap.min.js"></script>
-<link href="./Iris Tutorial_files/bootstrap-icons.css" rel="stylesheet">
-<link href="./Iris Tutorial_files/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Sylvia_Iris_tutorial_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Sylvia_Iris_tutorial_files/libs/quarto-html/quarto.js"></script>
+<script src="Sylvia_Iris_tutorial_files/libs/quarto-html/popper.min.js"></script>
+<script src="Sylvia_Iris_tutorial_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Sylvia_Iris_tutorial_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Sylvia_Iris_tutorial_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Sylvia_Iris_tutorial_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Sylvia_Iris_tutorial_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Sylvia_Iris_tutorial_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Sylvia_Iris_tutorial_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
-<style>.ansi-display{font-family:monospace;white-space:pre-wrap;--ansiBlack: #000000;--ansiRed: #cd3131;--ansiGreen: #00BC00;--ansiYellow: #949800;--ansiBlue: #0451a5;--ansiMagenta: #bc05bc;--ansiCyan: #0598bc;--ansiWhite: #555555;--ansiBrightBlack: #666666;--ansiBrightRed: #cd3131;--ansiBrightGreen: #14CE14;--ansiBrightYellow: #b5ba00;--ansiBrightBlue: #0451a5;--ansiBrightMagenta: #bc05bc;--ansiBrightCyan: #0598bc;--ansiBrightWhite: #a5a5a5}.dark-mode .ansi-display{--ansiBlack: #000000;--ansiRed: #cd3131;--ansiGreen: #0DBC79;--ansiYellow: #e5e510;--ansiBlue: #2472c8;--ansiMagenta: #bc3fbc;--ansiCyan: #11a8cd;--ansiWhite: #e5e5e5;--ansiBrightBlack: #666666;--ansiBrightRed: #f14c4c;--ansiBrightGreen: #23d18b;--ansiBrightYellow: #f5f543;--ansiBrightBlue: #3b8eea;--ansiBrightMagenta: #d670d6;--ansiBrightCyan: #29b8db;--ansiBrightWhite: #e5e5e5}@keyframes ansi-displaly-run-blink{50%{opacity:0}}.fui-FluentProvider h2{border-bottom:none;padding-bottom:0}</style><style data-make-styles-bucket="d" data-priority="0"></style><style id="fui-FluentProviderr0"></style></head>
+</head>
 
-<body class="fullcontent quarto-light" data-tabster="{&quot;root&quot;:{}}">
+<body class="fullcontent">
 
-<i tabindex="0" role="none" data-tabster-dummy="" aria-hidden="true" style="position: fixed; height: 1px; width: 1px; opacity: 0.001; z-index: -1; content-visibility: hidden; top: 0px; left: 0px;"></i><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
 <main class="content" id="quarto-document-content">
 
@@ -107,21 +106,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This R code creates a data visualization of the <strong>Iris dataset</strong> using the <code>ggplot2</code> package, with the following features:</p>
 <hr>
 <section id="step-by-step-explanation" class="level2">
-<h2 class="anchored" data-anchor-id="step-by-step-explanation">Step-by-step Explanation<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5770/#step-by-step-explanation" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h2>
+<h2 class="anchored" data-anchor-id="step-by-step-explanation">Step-by-step Explanation</h2>
 <section id="load-required-library" class="level3">
-<h3 class="anchored" data-anchor-id="load-required-library">1. Load Required Library<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5770/#load-required-library" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
+<h3 class="anchored" data-anchor-id="load-required-library">1. Load Required Library</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="http://localhost:5770/#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>-<code>ggplot2</code>: A popular package for creating elegant and customizable visualizations in R.</p>
 <hr>
 </section>
 <section id="create-the-initial-plot" class="level3">
-<h3 class="anchored" data-anchor-id="create-the-initial-plot">2. Create the Initial Plot<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5770/#create-the-initial-plot" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
+<h3 class="anchored" data-anchor-id="create-the-initial-plot">2. Create the Initial Plot</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="http://localhost:5770/#cb2-1" aria-hidden="true" tabindex="-1"></a>iris_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width)) <span class="sc">+</span></span>
-<span id="cb2-2"><a href="http://localhost:5770/#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb2-3"><a href="http://localhost:5770/#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(. <span class="sc">~</span> Species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>iris_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(. <span class="sc">~</span> Species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>-<code>ggplot(iris, aes(...))</code>: -Initializes the plot using the <code>iris</code> dataset. -Maps the <code>Sepal.Length</code> to the x-axis and <code>Sepal.Width</code> to the y-axis.</p>
 <p>-<code>geom_point()</code>: -Adds scatter points to the plot.</p>
@@ -129,38 +128,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 <section id="create-a-data-frame-for-custom-labels" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-data-frame-for-custom-labels">3. Create a Data Frame for Custom labels<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5770/#create-a-data-frame-for-custom-labels" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
+<h3 class="anchored" data-anchor-id="create-a-data-frame-for-custom-labels">3. Create a Data Frame for Custom labels</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="http://localhost:5770/#cb3-1" aria-hidden="true" tabindex="-1"></a>f_labels <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Species =</span> <span class="fu">c</span>(<span class="st">"setosa"</span>, <span class="st">"versicolor"</span>, <span class="st">"virginica"</span>), </span>
-<span id="cb3-2"><a href="http://localhost:5770/#cb3-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">label =</span> <span class="fu">c</span>(<span class="st">"Setosa"</span>, <span class="st">"Versicolor"</span>, <span class="st">"Virginica"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>f_labels <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Species =</span> <span class="fu">c</span>(<span class="st">"setosa"</span>, <span class="st">"versicolor"</span>, <span class="st">"virginica"</span>), </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">label =</span> <span class="fu">c</span>(<span class="st">"Setosa"</span>, <span class="st">"Versicolor"</span>, <span class="st">"Virginica"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>-<code>f_labels</code>: -A data frame that contains custom labels (<code>label</code>) for each <code>Species</code>.</p>
 <hr>
 </section>
 <section id="add-custom-label-to-the-plot" class="level3">
-<h3 class="anchored" data-anchor-id="add-custom-label-to-the-plot">4. Add Custom Label to the Plot<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5770/#add-custom-label-to-the-plot" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
+<h3 class="anchored" data-anchor-id="add-custom-label-to-the-plot">4. Add Custom Label to the Plot</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="http://localhost:5770/#cb4-1" aria-hidden="true" tabindex="-1"></a>iris_plot <span class="sc">+</span></span>
-<span id="cb4-2"><a href="http://localhost:5770/#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">x =</span> <span class="dv">7</span>, <span class="at">y =</span> <span class="dv">4</span>, <span class="fu">aes</span>(<span class="at">label =</span> label), <span class="at">data =</span> f_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>iris_plot <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">x =</span> <span class="dv">7</span>, <span class="at">y =</span> <span class="dv">4</span>, <span class="fu">aes</span>(<span class="at">label =</span> label), <span class="at">data =</span> f_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>-<code>geom_text(...)</code>: -Adds text labels to the plot. -<code>x = 7, y = 4</code>: Specifies the position for the labels in each facet. -<code>aes(label = label)</code>: Maps the <code>label</code> column from <code>f_labels</code> to the text labels.</p>
 <hr>
 </section>
 <section id="add-title-and-axis-labels" class="level3">
-<h3 class="anchored" data-anchor-id="add-title-and-axis-labels">5. Add Title and Axis labels<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5770/#add-title-and-axis-labels" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
+<h3 class="anchored" data-anchor-id="add-title-and-axis-labels">5. Add Title and Axis labels</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="http://localhost:5770/#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">'Iris'</span>, </span>
-<span id="cb5-2"><a href="http://localhost:5770/#cb5-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">x =</span> <span class="st">'Sepal length'</span>, </span>
-<span id="cb5-3"><a href="http://localhost:5770/#cb5-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">y =</span> <span class="st">'Sepal width'</span>,</span>
-<span id="cb5-4"><a href="http://localhost:5770/#cb5-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">caption =</span> <span class="st">'By Sylvia, DV, THU, 2024'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">'Iris'</span>, </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">x =</span> <span class="st">'Sepal length'</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">y =</span> <span class="st">'Sepal width'</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">caption =</span> <span class="st">'By Sylvia, DV, THU, 2024'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>-<code>labs(...)</code>: -Sets the plot’s title (<code>title</code>), x-axis label(<code>x</code>), y-axis label (<code>y</code>), and a caption (<code>caption</code>).</p>
 <hr>
 </section>
 <section id="customize-plot-theme" class="level3">
-<h3 class="anchored" data-anchor-id="customize-plot-theme">6. Customize Plot Theme<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="http://localhost:5770/#customize-plot-theme" style="font: 1em / 1 anchorjs-icons; margin-left: 0.1875em; padding-right: 0.1875em; padding-left: 0.1875em;"></a></h3>
+<h3 class="anchored" data-anchor-id="customize-plot-theme">6. Customize Plot Theme</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="http://localhost:5770/#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">20</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">20</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>-<code>theme(...)</code> : -Modifies visual properties of the plot. -<code>plot.title = element_text(hjust = 0.5, size = 20)</code> : -Centers the Title (<code>hjust = 0.5</code>) -Increase the title font size to <code>20</code>.</p>
 </section>
@@ -593,19 +592,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-
-<script>window.backupDefine = window.define; window.define = undefined;</script>
-<script type="text/javascript" src="./Iris Tutorial_files/quarto-preview.js"></script>
-<script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
-<script type="text/javascript">
-  const options = {
-    origin: "",
-    search: "",
-    inputFile: "/Users/ching/Desktop/Viz/Viz/Sylvia_Iris_tutorial.qmd",
-    isPresentation: false
-  }
-  document.addEventListener("DOMContentLoaded", function () {
-    window.QuartoPreview.init(options);
-  });
-</script>
-<div><div dir="ltr" class="fui-FluentProvider fui-FluentProviderr0 ___jdtuxv0 f19n0e5 fxugw4r f1o700av fk6fouc fkhj508 figsok6 f1i3iumi"></div></div><i tabindex="0" role="none" data-tabster-dummy="" aria-hidden="true" style="position: fixed; height: 1px; width: 1px; opacity: 0.001; z-index: -1; content-visibility: hidden; top: 0px; left: 0px;"></i></body></html>
+</body></html>
